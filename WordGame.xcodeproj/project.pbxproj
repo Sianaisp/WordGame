@@ -99,10 +99,11 @@
 		F9EF01E127AEB21A00D9F578 /* WordGame */ = {
 			isa = PBXGroup;
 			children = (
+				F9EF021227AEB38B00D9F578 /* Model */,
+				F9EF021427AEB3DF00D9F578 /* Views */,
+				F9EF021327AEB3B300D9F578 /* ViewModel */,
 				F9EF01E227AEB21A00D9F578 /* AppDelegate.swift */,
 				F9EF01E427AEB21A00D9F578 /* SceneDelegate.swift */,
-				F9EF01E627AEB21A00D9F578 /* ViewController.swift */,
-				F9EF01E827AEB21A00D9F578 /* Main.storyboard */,
 				F9EF01EB27AEB21B00D9F578 /* Assets.xcassets */,
 				F9EF01ED27AEB21B00D9F578 /* LaunchScreen.storyboard */,
 				F9EF01F027AEB21B00D9F578 /* Info.plist */,
@@ -125,6 +126,29 @@
 				F9EF020527AEB21C00D9F578 /* WordGameUITestsLaunchTests.swift */,
 			);
 			path = WordGameUITests;
+			sourceTree = "<group>";
+		};
+		F9EF021227AEB38B00D9F578 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F9EF021327AEB3B300D9F578 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F9EF021427AEB3DF00D9F578 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9EF01E827AEB21A00D9F578 /* Main.storyboard */,
+				F9EF01E627AEB21A00D9F578 /* ViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
