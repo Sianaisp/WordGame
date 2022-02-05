@@ -8,11 +8,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var viewModel = WordViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.getDataFromAPIHandler(url: EndPoint.dictionaryUrl)
     }
-
-
 }
 
