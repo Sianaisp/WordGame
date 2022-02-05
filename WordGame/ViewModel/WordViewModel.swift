@@ -12,8 +12,10 @@ class WordViewModel {
     typealias completion = ([Word]) -> ()
     private var pickedWord: Word?
     private var translationSuggestion: String?
-    var apiHandler = APIHandler()
-    var dictionary = [Word]()
+    private var apiHandler = APIHandler()
+    private var dictionary = [Word]()
+    private var score: Int = 0
+    var round: Int = 1
     
     
     func getDataFromAPIHandler(url: String, completion: @escaping completion) {
@@ -32,5 +34,27 @@ class WordViewModel {
         let translationOptions: [String] = [pickedWord?.spanish ?? "", dictionary.randomElement()?.spanish ?? ""]
         translationSuggestion = translationOptions.randomElement()
         return translationSuggestion
+    }
+    
+    
+    func resetScore() {
+        score = 0
+        round = 1
+    }
+    
+    func isCorrectWord() -> Bool {
+        translationSuggestion == pickedWord?.spanish
+    }
+    
+    func isWrongWord() -> Bool {
+        translationSuggestion != pickedWord?.spanish
+    }
+    
+    func incrementScore() {
+        score += 1
+    }
+    
+    func incrementRound() {
+        round += 1
     }
 }

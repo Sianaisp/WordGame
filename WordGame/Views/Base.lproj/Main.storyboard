@@ -78,6 +78,32 @@
                                     <constraint firstItem="zXi-Xv-9Zf" firstAttribute="top" secondItem="6qt-Kj-TkD" secondAttribute="top" constant="8" id="src-fn-Qmb"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6P-PP-gcA">
+                                <rect key="frame" x="91" y="752" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="NXK-ui-P8T"/>
+                                    <constraint firstAttribute="width" constant="80" id="elZ-mA-gG4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="incorrectTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YRJ-29-u4G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WzQ-W0-Ycl">
+                                <rect key="frame" x="266" y="752" width="80" height="80"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Cdd-uU-3wQ"/>
+                                    <constraint firstAttribute="width" constant="80" id="tyh-qc-ufr"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="correctTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1fu-jI-r5E"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -86,12 +112,17 @@
                             <constraint firstItem="6qt-Kj-TkD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="114" id="GYa-JV-gpa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6qt-Kj-TkD" secondAttribute="bottom" constant="131" id="STi-Pu-GNP"/>
                             <constraint firstItem="6qt-Kj-TkD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VfD-UN-rfo"/>
+                            <constraint firstItem="b6P-PP-gcA" firstAttribute="centerY" secondItem="WzQ-W0-Ycl" secondAttribute="centerY" id="icS-AS-HIa"/>
+                            <constraint firstAttribute="trailing" secondItem="WzQ-W0-Ycl" secondAttribute="trailing" constant="68" id="qEK-XP-2gT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WzQ-W0-Ycl" secondAttribute="bottom" constant="30" id="xvP-BL-4Qd"/>
+                            <constraint firstItem="b6P-PP-gcA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="91" id="ydE-Rw-nu1"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="centerWord" destination="VTX-6u-0a8" id="kub-mn-XBu"/>
                         <outlet property="fallingWord" destination="bIQ-HE-mhp" id="zZi-Hc-aDH"/>
                         <outlet property="gameView" destination="6qt-Kj-TkD" id="6ZJ-c4-f6x"/>
+                        <outlet property="incorrectButton" destination="b6P-PP-gcA" id="CFw-C7-koc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -102,6 +133,12 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
