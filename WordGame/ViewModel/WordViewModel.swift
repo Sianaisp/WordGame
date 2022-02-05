@@ -14,8 +14,8 @@ class WordViewModel {
     private var translationSuggestion: String?
     private var apiHandler = APIHandler()
     private var dictionary = [Word]()
-    private var score: Int = 0
-    var round: Int = 1
+    var score: Int = 0
+    var round: Int = 0
     
     
     func getDataFromAPIHandler(url: String, completion: @escaping completion) {
@@ -39,7 +39,7 @@ class WordViewModel {
     
     func resetScore() {
         score = 0
-        round = 1
+        round = 0
     }
     
     func isCorrectWord() -> Bool {

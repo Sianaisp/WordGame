@@ -20,6 +20,7 @@
 		F9EF021827AEB65600D9F578 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF021727AEB65600D9F578 /* Constant.swift */; };
 		F9EF021A27AEB6C400D9F578 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF021927AEB6C400D9F578 /* APIHandler.swift */; };
 		F9EF021C27AEB8DA00D9F578 /* WordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF021B27AEB8DA00D9F578 /* WordViewModel.swift */; };
+		F9EF021E27AED7FA00D9F578 /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9EF021D27AED7FA00D9F578 /* ResultsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		F9EF021727AEB65600D9F578 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F9EF021927AEB6C400D9F578 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
 		F9EF021B27AEB8DA00D9F578 /* WordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewModel.swift; sourceTree = "<group>"; };
+		F9EF021D27AED7FA00D9F578 /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				F9EF01E827AEB21A00D9F578 /* Main.storyboard */,
 				F9EF01E627AEB21A00D9F578 /* ViewController.swift */,
+				F9EF021D27AED7FA00D9F578 /* ResultsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9EF01E727AEB21A00D9F578 /* ViewController.swift in Sources */,
+				F9EF021E27AED7FA00D9F578 /* ResultsView.swift in Sources */,
 				F9EF01E327AEB21A00D9F578 /* AppDelegate.swift in Sources */,
 				F9EF021827AEB65600D9F578 /* Constant.swift in Sources */,
 				F9EF021A27AEB6C400D9F578 /* APIHandler.swift in Sources */,
