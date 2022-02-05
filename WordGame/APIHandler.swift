@@ -8,8 +8,10 @@
 import Foundation
 
 class APIHandler {
+    
+    typealias completion = ([Word]) -> ()
      
-    func getData(withUrl url: String) {
+    func getData(withUrl url: String, completion: @escaping completion) {
         if let unwrappedUrl = URL(string: url) {
             URLSession.shared.dataTask(with: unwrappedUrl, completionHandler: { (data, response, error) in
                 if let error = error {
@@ -17,8 +19,11 @@ class APIHandler {
                 }
                 if let data = data {
                 let jsonDecoder =  JSONDecoder()
-                let dictionary =  try? jsonDecoder.decode([Word].self, from: data)
-                    print(dictionary![0].spanish)
+                    guard let dictionary =  try? jsonDecoder.decode([Word].self, from: data) else {
+                        completion([])
+                        return
+                    }
+                    completion(dictionary)
                 }
             }).resume()
         }
