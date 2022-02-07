@@ -24,6 +24,7 @@ Better error handling,I would add a visual feedback on the screen if we were una
 Make different levels with different speeds and colours.  
 Adapt the cloud and plane sizes to the sizes of the words.  
 Better animations and game play.  
+Changed the status bar colour to whitw.
 Visual feedback/blinking when tapping the buttons and haptic feedback.  
 Find a way to write better UNIT tests.  
 
