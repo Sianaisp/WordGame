@@ -1,7 +1,6 @@
 # WordGame
 A small game to test your language skills
 
-
 _Time invested  
 Around 8 hours  
 
@@ -28,4 +27,9 @@ Better animations and game play.
 Visual feedback/blinking when tapping the buttons and haptic feedback.  
 Find a way to write better UNIT tests.  
 
+
+
+
+
+![Screenshot 2022-02-07 at 09 51 46](https://user-images.githubusercontent.com/41368873/152755217-49beaa8d-8d72-45a4-8ff4-d47d36e3924a.png)
 
